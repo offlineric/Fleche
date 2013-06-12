@@ -54,7 +54,7 @@
 
 
 
-.tab-icon-image {filter: url(http://paste.installgentoo.com/view/raw/fd8fe919);}
+.tab-icon-image {filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGZpbHRlciBpZD0iZ3JleXNjYWxlIj4KCjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIxLjAwMDAgMS4wMDAwIDEuMDAwMCAwIDAKCiAxLjAwMDAgMS4wMDAwIDEuMDAwMCAwIDAKCiAxLjAwMDAgMS4wMDAwIDEuMDAwMCAwIDAKCiAwICAwICAwICAxIDAiLz4KCiA8L2ZpbHRlcj4KCiA8L3N2Zz4K==#greyscale);}
 
 /* General style */
 .tab-close-button, 
@@ -230,7 +230,7 @@ pointer-events: none;}
 .tabbrowser-tab[selected="true"] .tab-text {
     color: #595c66 !important;
     color: #fff !important;
-        background-image: url("http://i.imgur.com/nJCz1e0.png");
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QUZAScaoeATHAAAAE9JREFUKM+dkjkOACAMw1z+/+eychVIMttSj4CQzMxQYIBQ4C9hhJ/CCl+FE1wKFXwUbvAmvOBJ+IEBGmL8kaylrbNaj7OqYZXPqrf62E3qA/lLyCad0sgAAAAASUVORK5CYII=");
         height: 100px ;
         margin-right: 0px !important;
         padding-top: 5px !important;
@@ -239,7 +239,7 @@ pointer-events: none;}
     background-position: right center;
     background-repeat: no-repeat;
 }
-.tabbrowser-tab[selected="true"] .tab-icon-image {filter: url(http://paste.installgentoo.com/view/raw/bffbc91c);}
+.tabbrowser-tab[selected="true"] .tab-icon-image {filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGZpbHRlciBpZD0iZ3JleXNjYWxlIj4KCjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIxLjAwMDAgMS4wMDAwIDEuMDAwMCAwIDAKCiAxLjAwMDAgMS4wMDAwIDEuMDAwMCAwIDAKCiAxLjAwMDAgMS4wMDAwIDEuMDAwMCAwIDAKCiAwICAwICAwICAxIDAiLz4KCiA8L2ZpbHRlcj4KCiA8L3N2Zz4K==#greyscale);}
 
 /*Disable FXChrome tab background for tabs*/
 .tab-content {
