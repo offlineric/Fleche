@@ -1,5 +1,6 @@
 # Flèche Vertical
-Forked from and entirely inspired by the brilliant theme by hdni
+Forked from and entirely inspired by the brilliant [Flèche](https://github.com/hdni/Fleche) theme by hdni. 
+I just added vertical tabs styling to his firefox theme.
 
 ### Firefox
 * Install the [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/) extension.
