@@ -1,17 +1,73 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+
+
+    /* hide tab close button */
+    .tabbrowser-tab .tab-close-button {
+      visibility: collapse !important;
+    }
+    .tabbrowser-tab:not([pinned]):hover .tab-close-button.always-right {
+      display: none !important;
+    }
+
+    /* display close tab button on tab hover */
+    .tabbrowser-tab:not([pinned]).tab-icon-image:hover .tab-close-button {
+      visibility: visible !important; margin-right:3px !important;
+
+    }
+    .tabbrowser-tab:not([pinned]):hover .tab-close-button {
+      display: -moz-box !important; margin-right:3px !important;
+    }
+    .tabbrowser-tab:not([pinned]):hover .tab-close-button.always-left {
+      display: -moz-box !important; margin-right:3px !important;
+    }
+
+    /* Move close tab button on left */
+    .tabbrowser-tab:not([pinned]) .tab-throbber { -moz-box-ordinal-group: 3 !important; margin-left:0px !important;}
+    .tabbrowser-tab:not([pinned]) .tab-icon-image { -moz-box-ordinal-group: 2 !important; margin-left:0px !important;}
+    .tabbrowser-tab:not([pinned]) .tab-text { -moz-box-ordinal-group: 4 !important; margin-left:0px !important; margin-right:-1px !important;}
+    .tabbrowser-tab:not([pinned]) .tab-close-button { -moz-box-ordinal-group: 1 !important; margin-left:-1px !important;      margin-top: -4px !important;}
+    .tabbrowser-tab:not([pinned]) .tab-close-button[selected="true"] { -moz-user-focus: normal !important;}
+    
+    /* hide tab icon on tab hover */
+    .tabbrowser-tab:not([pinned]).tab-icon-image:hover  {
+      display: none !important;
+    }
+    
+    /* hide tab throbber, TMP Lock and Reload icons on tab hover */
+    .tabbrowser-tab:not([pinned]):hover .tab-throbber,
+    .tabbrowser-tab:not([pinned]):hover .tab-lock-icon,
+    .tabbrowser-tab:not([pinned]):hover .tab-reload-icon {
+      display: none !important;
+    }
+
+    /* TMP-Lock-Protect-Auto Reload Icons */
+    .tabbrowser-tab:not([pinned]) .tab-reload-icon,
+    .tabbrowser-tab:not([pinned]) .tab-protect-icon,
+    .tabbrowser-tab:not([pinned]) .tab-lock-icon {
+      -moz-box-ordinal-group: 2 !important;
+    }
+    .tabbrowser-tab:not([pinned]):hover .tab-protect-icon {
+      margin-left:-19px !important;
+    }
+
+
+
+
+.tab-icon-image {filter: url(http://paste.installgentoo.com/view/raw/fd8fe919);}
+
 /* General style */
+.tab-close-button, 
 .urlbar-history-dropmarker,
 #star-button,  
 #page-proxy-favicon,
 .scrollbutton-up,
 .scrollbutton-down,
-.tab-close-button,
-.tab-icon-image,
+
 #go-button {
     display: none !important;
 }
-
+#navigator-toolbox {box-shadow: none !important;  }
 #identity-box {
     -moz-appearance: none !important;
     border: none !important;
@@ -29,8 +85,9 @@
     padding-right: 8px !important;
     padding-left: 8px !important;
     padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 0px !important;
     height: 38px !important;
+
 }
 
 #navigator-toolbox:after {
@@ -44,7 +101,7 @@
 }
 
 #urlbar {
-    font-size: 10pt !important;
+    font-size: 8pt !important;
     color: #595c66 !important;
     border: 1px solid #d2d3d4 !important;
     border-radius: 2px !important;
@@ -56,6 +113,7 @@
     margin-left: 4px !important;
     margin-right: 4px !important;
     height: 28px !important;
+    
 }
 
 #searchbar .searchbar-textbox {
@@ -71,8 +129,8 @@
 .tabs-newtab-button {
     margin-right: 6px !important;
     margin-left: 6px !important;
-    margin-bottom: 8px !important;
-    margin-top: 6px !important;
+    margin-bottom: 4px !important;
+    margin-top: 10px !important;
     padding-left: 2px !important;
     padding-right: 2px !important;
     background: #505257 !important;
@@ -101,48 +159,67 @@
     background: #37393d !important;
     border: none !important;
     margin-top: 0px !important;
-    padding-left: 2px !important;
-    padding-right: 2px !important;
+    background: #484a4e !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
     padding-bottom: 0 !important;
+    padding-top: 26px !important;
+    
 }
 
 .tabbrowser-tab {
     border: none !important;
-    border-radius: 2px !important;
+    border-radius: 0px !important;
     background: #505257 !important;
-    margin: 1px !important;
-    padding: 3px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+
     margin-bottom: 0px !important;
+    background: transparent !important;
+    padding-left: 25px !important;
+    margin-top: 1px !important;
+    max-height: 10px !important;
+    min-height: 21px !important;
+    
+
 }
 
-.tabbrowser-tab:first-child {
-    margin-left: 0px !important;
-}
+.tabbrowser-tab:first-child:before { content: "Open Tabs"; position: fixed; margin-top: -19px ;
+margin-left: -10px;
+font-weight: 600;
+color: #b4b8c3;
+pointer-events: none;}
+
+
 
 .tabbrowser-tab:last-child {
-    margin-right: 0px !important;
+
 }
 
 .tabbrowser-tab:hover {
     background: #6f737f !important;
+    background: #56585e !important;
     box-shadow: 0px 0px 2px rgba(0,0,0,0.2) !important;
     transition: all 0.1s ease 0s !important;
 }
 
 .tabbrowser-tab[selected=true], .tabbrowser-tab[selected=true]:hover {
     background: #ebeced !important;
+    background: #4c7bd9 !important;
     margin-bottom: 0px !important;
     border-top: none !important;
     transition: none !important;
+
 }
 
 .tab-text {
-    font-size: 10pt !important;
-    text-align: center !important;
+    font-size: 8pt !important;
+    text-align: left !important;
     color: rgba(255,255,255,0.4) !important;
+    color: #b4b8c3 !important;
     margin-left: 2px !important;
     margin-right: 2px !important;
-    margin-bottom: 1px !important;
+    margin-bottom: 0px !important;
 }
 
 .tabbrowser-tab:hover .tab-text {
@@ -152,12 +229,23 @@
 
 .tabbrowser-tab[selected="true"] .tab-text {
     color: #595c66 !important;
+    color: #fff !important;
+        background-image: url("http://i.imgur.com/nJCz1e0.png");
+        height: 100px ;
+        margin-right: 0px !important;
+        padding-top: 5px !important;
+        padding-right: 10px !important;
+    background-size: 12px 20px;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
+.tabbrowser-tab[selected="true"] .tab-icon-image {filter: url(http://paste.installgentoo.com/view/raw/bffbc91c);}
 
 /*Disable FXChrome tab background for tabs*/
 .tab-content {
     border: none !important;
     border-width: 0 0 !important;
+        padding-bottom: 5px !important;
     -moz-margin-start: 0 !important;
     -moz-margin-end: 0 !important;
 }
@@ -172,6 +260,8 @@
     margin-left: -2px !important;
     margin-right: -2px !important;
     border: none !important;
+    display: inherit !Important;
+
 }
 
 /* Location bar buttons */
@@ -338,7 +428,7 @@ and make Firefox tabs close properly even though max-width is overridden */
     min-width: 1px !important;
 }*/
 
-/* Scrollbars */
+/* Scrollbars 
 
 scrollbar,
 scrollbar > slider, 
@@ -387,4 +477,51 @@ scrollbar > slider > thumb:hover,
 scrollbar > slider > thumb:active {
     background-color: #9b9eaf !important;
     border-color: #9b9eaf !important;
+}*/
+cscrollbar scrollbarbutton ,
+scrollbar gripper {
+	visibility: collapse;
 }
+scrollbar ,
+scrollbar thumb {
+	-moz-appearance: none !important;
+}
+scrollbar[orient="vertical"] {
+	-moz-margin-start: -4px;
+	min-width: 4px;
+	max-width: 4px;
+}
+scrollbar[orient="horizontal"] {
+	margin-top: -4px;
+	min-height: 4px;
+	max-height: 4px;
+}
+scrollbar {
+	position: relative;
+	background-image: none;
+	z-index: 2147483647;
+	background-color: transparent;
+	            transition: all 1.1s ease .1s !important;
+	            pointer-events: none !important;
+}
+
+scrollbar thumb {
+	border: none !important;
+	border-radius: 5px !important;
+	background-color: #92969b;
+    pointer-events: auto !important;
+    	            transition: all 1.1s ease .1s !important;
+	opacity: .25;
+}
+scrollbar:hover thumb {
+	opacity: 1;
+}
+scrollbar thumb:active ,
+scrollbar thumb:hover {
+	opacity: 1;
+	background-color: ButtonShadow;
+}
+
+splitter {display: none !important;}
+
+
