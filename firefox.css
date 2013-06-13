@@ -215,6 +215,7 @@ pointer-events: none;}
 .tab-text {
     font-size: 8pt !important;
     text-align: left !important;
+    padding-right: 10px !important;
     color: rgba(255,255,255,0.4) !important;
     color: #b4b8c3 !important;
     margin-left: 2px !important;
