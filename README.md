@@ -12,3 +12,4 @@ I just added vertical tabs styling to his firefox theme.
 
 ## Notes
 * This theme is not complete yet, and still has bugs. If you find any, please use the issues tracker!
+* To resize the tab bar you have to remove the last line of the style (splitter display none) 
