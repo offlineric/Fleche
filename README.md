@@ -16,6 +16,9 @@ I just added vertical tabs styling to his firefox theme.
 * And the [toolbar autohide](https://addons.mozilla.org/en-US/firefox/addon/fullscreen-toolbar-hover) extension.
 * Also designed to have the home button directly before the urlbar otherwise those will look strange.
 
+### Tooltips titles variant
+* Should be the same as autohiding.
+
 ## Notes
-* This theme is not complete yet, and still has bugs. If you find any, please feel free to fix them yourself ;) 
+* This theme is not complete yet, and still has bugs. If you find any, please feel free to fix them yourself ;) and send me your patches.
 * To resize history or various other panels you have to remove the last line of the style (#splitter {display none}) 
