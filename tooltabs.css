@@ -1,7 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 
-  /* swap text & close button */
+	/* swap text & close button */
 	.tabbrowser-tab .tab {
 	  -moz-box-ordinal-group: 3 !important;
 	}
@@ -93,7 +93,7 @@ filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi
 #go-button {
     display: none !important;
 }
-#navigator-toolbox {box-shadow: none !important;  }
+#navigator-toolbox {margin-left: 28px !important; box-shadow: none !important; z-index: 0 !important; }
 #identity-box {
     -moz-appearance: none !important;
     border: none !important;
@@ -132,7 +132,7 @@ transition: all .7s ease .2s !important;
 
     display: none !important;
 }
-#navigator-toolbox {transition: all .7s ease .2s !important; transition-delay: .6s !important;}
+#navigator-toolbox {transition: all .4s ease .2s !important; transition-delay: .6s !important;}
 
 #addon-bar {
     background: #ededeb !important;
@@ -212,7 +212,7 @@ transition: all .7s ease .2s !important;
     min-width: 328px !important;
     max-width: 328px !important;
     overflow: hidden !important;
-
+    margin-right: -300px !important;
 
 }
 .tabbrowser-tab > .tab-stack {
@@ -220,7 +220,7 @@ transition: all .7s ease .2s !important;
   position: relative;
 }
 
-browser { margin-left: -300px ; }
+
 #tabbrowser-tabs:hover {
     max-width: 328px !important; 
 }
