@@ -17,7 +17,8 @@ I just added vertical tabs styling to his firefox theme.
 * Also designed to have the home button directly before the urlbar otherwise those will look strange.
 
 ### Tooltips titles variant
-* Should be the same as autohiding.
+* Works best with the [lesschrome modified](https://addons.mozilla.org/en-US/firefox/addon/lesschrome-modified/) extension.
+* Customize toolbar and place the home button immediately to the left of urlbar or else it won't look closed on that side. 
 
 ## Notes
 * This theme is not complete yet, and still has bugs. If you find any, please feel free to fix them yourself ;) and send me your patches.
