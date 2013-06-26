@@ -23,6 +23,7 @@ Forked from and eentirely inspired by the brilliant [ribbon style](https://githu
 * Install 4chan_userscript.user.js in greasemonkey.
 * Go to your [Add-ons Manager](about:addons), select the User Styles page and then write a new style.
 * Give the style a name and paste the contents of 4chan_style.css.
+* If it looks wrong you can try saving and importing my 4chan_x_settings.json file in to your 4chan-x.
 
 ###Other recommended firefox extensions
 * Download Statusbar
